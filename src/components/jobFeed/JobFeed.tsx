@@ -144,7 +144,7 @@ const JobFeed = () => {
 
             <div className="fixed bottom-12 shadow-lg py-4">
                 <div className='flex flex-row space-x-6 '>
-                    <div className="p-4 border-2 border-[#e95123] hover:bg-[#e95123] text-[#e95123] transition-transform duration-400 hover:text-white hover:scale-110 rounded-full cursor-pointer">
+                    <div className="p-4 border-2 border-[#f83b22] hover:bg-[#f83b22] text-[#f83b22] transition-transform duration-400 hover:text-white hover:scale-110 rounded-full cursor-pointer">
                         <X size={30} />
                     </div>
                     <div className="p-4 border-2 text-[#038134] border-[#038134] hover:bg-[#038134] transition-transform duration-400 rounded-full cursor-pointer hover:scale-110 hover:text-white">

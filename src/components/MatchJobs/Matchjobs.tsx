@@ -28,19 +28,19 @@ const Matchjobs = () => {
           <p className='font-bold text-lg'>Journeyman Plumber
           </p>
 
-          <div className='flex flex-row space-x-2 py-1 mt-3'>
+          <div className='flex flex-row items-center space-x-2 py-1 mt-3'>
             <Building2 size={18} />
             <span>G&C Plumbing & Heating LLC</span>
           </div>
 
-          <div className='flex flex-row space-x-2 py-1'>
+          <div className='flex flex-row items-center space-x-2 py-1'>
             <MapPin size={18} />
-            <span>G&C Plumbing & Heating LLC</span>
+            <span>Bellingham, MA, US</span>
           </div>
 
-          <div className='flex flex-row space-x-2 py-1'>
+          <div className='flex flex-row items-center space-x-2 py-1'>
             <Banknote size={18} />
-            <span>G&C Plumbing & Heating LLC</span>
+            <span>$72,800 - $115,000</span>
           </div>
 
           <div className='flex flex-row py-3 items-center space-x-2'>
@@ -51,7 +51,7 @@ const Matchjobs = () => {
           <div className='flex  flex-row w-full mt-3 justify-between space-x-3'>
             <button className='w-full bg-transparent border rounded-lg border-gray-500 hover:bg-slate-100 p-2'>View Details</button>
             <button className='w-full bg-transparent border rounded-lg border-blue-500 hover:bg-sky-50  p-2'>Mark as Applied</button>
-            <button className='w-full bg-transparent border rounded-lg bg-sky-700 text-white hover:bg-sky-800 p-2'>Apply Now</button>
+            <button className='w-full  border rounded-lg bg-sky-700 text-white hover:bg-sky-800 p-2'>Apply Now</button>
           </div>
         </div>
 
