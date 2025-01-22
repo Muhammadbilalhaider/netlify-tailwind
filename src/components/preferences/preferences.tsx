@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react'
-import { Briefcase, Building2, Locate, LocateFixed, MapPin } from 'lucide-react'
+import { Briefcase, Building2, Code, Locate, LocateFixed, MapPin, Settings } from 'lucide-react'
 
 
 const Preferences = () => {
@@ -109,8 +109,8 @@ const Preferences = () => {
 
 
         <div className='flex flex-col border mt-6 m-8 rounded-md p-4'>
-          <div className='flex space-x-1 items-center text-sky-700 flex-row'>
-            <Briefcase size={20} />
+          <div className='flex space-x-1 items-center text-emerald-600 flex-row'>
+            <Code size={20} />
             <p className='font-semibold text-lg'>Technology Preferences</p>
           </div>
           <div className='flex flex-col  space-y-2 mt-5'>
