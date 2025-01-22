@@ -107,7 +107,6 @@ const Preferences = () => {
 
         </div>
 
-
         <div className='flex flex-col border mt-6 m-8 rounded-md p-4'>
           <div className='flex space-x-1 items-center text-emerald-600 flex-row'>
             <Code size={20} />
@@ -128,6 +127,8 @@ const Preferences = () => {
           </div>
 
         </div>
+
+
         <div className='flex flex-col mt-6 m-4 rounded-md p-4'>
           <button className='w-full p-2 rounded-md bg-sky-700 text-white'>Save Preferences</button>
         </div>
