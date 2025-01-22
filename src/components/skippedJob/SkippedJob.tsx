@@ -30,7 +30,7 @@ const SkippedJob = () => {
       {/* Jobs Table */}
       <div className="flex flex-col bg-gray-50 rounded-lg shadow-md w-full">
         {/* Table Header */}
-        <div className="hidden sm:flex flex-row justify-between px-4 sm:px-8 py-3 bg-gray-50 rounded-t-lg text-sm sm:text-base lg:text-lg font-medium text-gray-800">
+        <div className="hidden sm:flex flex-row justify-between px-4 md:text-sm sm:px-8 py-3 bg-gray-50 rounded-t-lg text-sm sm:text-base lg:text-lg font-medium text-gray-800">
           <span>Job Title</span>
           <span>Company</span>
           <span>Skipped</span>
@@ -39,21 +39,21 @@ const SkippedJob = () => {
         <hr className="border-gray-300 opacity-40" />
 
         {/* Job Row */}
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center px-4 sm:px-8 py-3 bg-white space-y-4 sm:space-y-0">
-          <div className="w-full sm:w-auto text-sm sm:text-base">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center px-4  py-3 bg-white space-y-4 sm:space-y-0">
+          <div className="w-full sm:w-auto text-sm md:text-xs sm:text-base">
             <p className="font-medium">Journeyman Plumber</p>
           </div>
-          <div className="w-full sm:w-auto text-sm sm:text-base">
+          <div className="w-full sm:w-auto text-sm md:text-xs">
             <p>G&C Plumbing & Heating LLC</p>
           </div>
-          <div className="w-full sm:w-auto text-sm sm:text-base text-gray-500">
+          <div className="w-full sm:w-auto text-sm md:text-xs sm:text-base text-gray-500">
             <p>About 21 hours ago</p>
           </div>
-          <div className="flex flex-row gap-2 w-full sm:w-auto justify-start sm:justify-center">
-            <button className="bg-transparent border border-gray-300 text-sm sm:text-base p-1 rounded-lg px-3 hover:bg-gray-100">
+          <div className="flex flex-row lg:gap-2 gap-1 w-full md:text-xs sm:w-auto justify-start sm:justify-center">
+            <button className="bg-transparent border md:text-xs border-gray-300 text-sm sm:text-base p-1 rounded-lg px-3 hover:bg-gray-100">
               Un-skip
             </button>
-            <button className="bg-sky-800 text-white text-sm sm:text-base p-1 rounded-lg px-3 hover:bg-sky-700">
+            <button className="bg-sky-800 md:text-xs text-white text-sm sm:text-base p-1 rounded-lg px-3 hover:bg-sky-700">
               Match
             </button>
           </div>
