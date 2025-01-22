@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Banknote, Book, BookA, BookCheck, BookCopy, BookDown, Building2, Clock, FileText, Filter, Ghost, MapPin, NotebookTabsIcon, NotepadText, NotepadTextDashed, PartyPopper, Phone, PhoneCall, Rocket, Search, Skull, Users } from 'lucide-react'
 
 
 const Applied = () => {
 
+  const [tracker, setTracker] = useState(null)
 
   const stages = [
     { name: 'Applied', icon: <Rocket size={20} /> },
@@ -14,7 +15,9 @@ const Applied = () => {
     { name: 'Offer', icon: <PartyPopper size={20} /> },
   ];
 
-
+  const handleChangeTracker = (index: number) => {
+    setTracker(index)
+  }
 
   return (
     <div className='w-full flex flex-col justify-center items-start py-10 px-4 sm:px-10 lg:px-32'>
@@ -28,11 +31,11 @@ const Applied = () => {
 
       <div className='flex flex-col justify-center w-full mt-10 bg-white border border-gray-300 rounded-xl px-5 py-7 sm:px-7 md:py-10'>
         <div className='flex flex-row md:justify-between sm:justify-center'>
-        <p className='font-bold text-lg md:text-xl'>Journeyman Plumber</p>
-        <div className='flex flex-row items-center justify-center space-x-2 border rounded-md px-0 py-0 lg:px-3 lg:py-1.5 hover:bg-slate-100 cursor-pointer'>
-        <FileText size={20} />
-        <p className='font text-xs '>Add Notes</p>
-        </div>
+          <p className='font-bold text-lg md:text-xl'>Journeyman Plumber</p>
+          <div className='flex flex-row items-center justify-center space-x-2 border rounded-md px-0 py-0 lg:px-3 lg:py-1.5 hover:bg-slate-100 cursor-pointer'>
+            <FileText size={20} />
+            <p className='font text-xs '>Add Notes</p>
+          </div>
         </div>
 
         <div className='flex flex-row items-center space-x-2 py-1 mt-3'>
@@ -52,7 +55,7 @@ const Applied = () => {
 
         <div className="relative w-full mb-4">
           <div className='flex w-full mt-5'>
-            <hr className="border-gray-700 w-full border opacity-70 absolute top-1/2" />
+            <hr className="border-gray-400 w-full border opacity-70 absolute top-1/2" />
           </div>
 
           <div className="flex flex-row justify-between items-center w-full relative z-10">
@@ -60,10 +63,27 @@ const Applied = () => {
               <div
                 key={index}
                 className="flex flex-col items-center cursor-pointer"
+                onClick={() => handleChangeTracker(index)}
               >
                 <span
-                  className="flex flex-col lg:w-14 md:w-12 md:h-12 lg:h-14 w-6 h-6 lg:border-8 md:border-4 border-4 bg-white text-sky-700 border-sky-900 rounded-full items-center justify-center"
-                >
+                  className={`flex flex-col lg:w-14 md:w-12 md:h-12 lg:h-14 w-6 h-6 rounded-full items-center justify-center 
+                    ${tracker === index 
+                      ? (index === 0 
+                        ? 'lg:border-8 md:border-4 border-8 border-sky-800 bg-white text-sky-700' 
+                        : index === 1 
+                        ? 'lg:border-8 md:border-4 border-8 border-red-500 bg-white text-red-500' 
+                        : index === 2 
+                        ? 'lg:border-8 md:border-4 border-8 border-gray-300 bg-white text-gray-300' 
+                        : index === 3 
+                        ? 'lg:border-8 md:border-4 border-8 border-yellow-500 bg-white text-yellow-500' 
+                        : index === 4 
+                        ? 'lg:border-8 md:border-4 border-8 border-purple-500 bg-white text-purple-500' 
+                        : index === 5 
+                        ? 'lg:border-8 md:border-4 border-8 border-orange-500 bg-white text-orange-500' 
+                        : ''
+                      ) 
+                    : 'lg:border-2 md:border-4 border-4 border-gray-400 bg-white text-sky-700'
+                  }`}>
                   {stage.icon}
                 </span>
                 <span

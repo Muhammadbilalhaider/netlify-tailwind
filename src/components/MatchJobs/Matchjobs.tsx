@@ -14,7 +14,7 @@ const Matchjobs = () => {
 
       <div className="flex w-full flex-col">
         <p className="font-bold text-xl sm:text-2xl">Matched Jobs</p>
-        <p className="text-sm sm:text-base">
+        <p className="text-sm sm:text-xs">
           Review and apply to jobs you've matched with
         </p>
 
