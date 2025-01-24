@@ -39,26 +39,28 @@ const Matchjobs = () => {
 
      
         <div className="flex p-3 flex-col w-full bg-white border border-gray-300 rounded-xl space-y-3">
-          <p className="font-bold text-base sm:text-lg">Journeyman Plumber</p>
-
+          <span className='flex flex-row items-center space-x-6'>
+          <p className="font-semibold text-gray-900 text-lg sm:text-lg">Journeyman Plumber</p>
+          <span className='bg-success/5 p-1'><p className='text-xs text-success'>New Match</p></span>
+          </span>
           <div className="flex flex-row items-center space-x-2 text-sm">
             <Building2 size={18} />
-            <span>G&C Plumbing & Heating LLC</span>
+            <span><p className='text-gray-600'>G&C Plumbing & Heating LLC</p></span>
           </div>
 
           <div className="flex flex-row items-center space-x-2 text-sm">
             <MapPin size={18} />
-            <span>Bellingham, MA, US</span>
+            <span><p className='text-gray-600'>Bellingham, MA, US</p></span>
           </div>
 
           <div className="flex flex-row items-center space-x-2 text-sm">
             <Banknote size={18} />
-            <span>$72,800 - $115,000</span>
+            <span><p className='text-gray-600'>$72,800 - $115,000</p></span>
           </div>
 
           <div className="flex flex-row items-center space-x-2 text-sm">
             <Clock size={18} />
-            <span>Posted about 11 hours ago</span>
+            <span><p className='text-sm text-gray-500'>Posted about 11 hours ago</p></span>
           </div>
 
           {/* Buttons */}
