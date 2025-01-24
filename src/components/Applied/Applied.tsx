@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Banknote, Book, BookA, BookCheck, BookCopy, BookDown, Building2, Clock, FileText, Filter, Ghost, MapPin, NotebookTabsIcon, NotepadText, NotepadTextDashed, PartyPopper, Phone, PhoneCall, Rocket, Search, Skull, Users } from 'lucide-react'
+import { Banknote, Book, BookA, X, BookCheck, BookCopy, BookDown, Building2, Clock, FileText, Filter, Ghost, MapPin, NotebookTabsIcon, NotepadText, NotepadTextDashed, PartyPopper, Phone, PhoneCall, Rocket, Search, Skull, Users } from 'lucide-react'
 
 
 const Applied = () => {
@@ -42,13 +42,13 @@ const Applied = () => {
   };
 
   const handleAddNotes = () => {
-   
+
     setOPenNotes(true)
   }
 
-const handlecancelNotes = ()=>{
-  setOPenNotes(false)
-}
+  const handlecancelNotes = () => {
+    setOPenNotes(false)
+  }
 
   return (
     <div className='w-full flex flex-col justify-center items-start py-10 px-4 sm:px-10 lg:px-32'>
@@ -156,24 +156,29 @@ const handlecancelNotes = ()=>{
       </div>
 
       {openNotes && (
-        <div className="fixed inset-0 flex-col bg-gray-600 bg-opacity-25 z-30 flex justify-center p-10 items-center">
+        <div className="fixed inset-0 flex-col bg-gray-600 bg-opacity-70 z-30 flex justify-center p-10 items-center">
           <div className='flex flex-col w-5/12 h-auto justify-center items-center rounded-lg bg-white'>
             <span className='flex justify-between w-full px-4 py-2'>
               <p className='font-bold text-start text-2xl text-gray-900'>
                 Application Notes
               </p>
-              <span className='w-8 h-8 justify-center text-center items-center rounded-full hover:bg-slate-300'>x</span>
+              <button
+                className='w-8 h-8 rounded-full flex justify-center items-center hover:bg-slate-300 cursor-pointer'
+                onClick={handlecancelNotes}
+              >
+                <X size={20} />
+              </button>
             </span>
             <div className='flex w-full mt-3'>
               <hr className="border-gray-400  w-full border opacity-30" />
             </div>
             <span className='flex w-full px-3'>
-              <textarea className='w-full mt-3 h-44 border rounded-lg py-2'></textarea>
+              <textarea className='w-full mt-3 h-44 border rounded-lg py-0.5 px-1' placeholder='Add your notes about this application...'></textarea>
             </span>
 
 
             <div className='flex flex-row space-x-2 py-3 justify-end items-end w-full mr-6'>
-              <button className='bg-gray-100 border p-2 rounded-md cursor-pointer'  onClick={() => handlecancelNotes()}>Cancel</button>
+              <button className='bg-gray-100 border p-2 rounded-md cursor-pointer' onClick={handlecancelNotes}>Cancel</button>
               <button className='bg-primary p-2 text-white rounded-md'>Save Notes</button>
             </div>
           </div>
