@@ -13,11 +13,13 @@ const UserPortal = () => {
     {
       name: 'Total Applies',
       icon: CheckCircle2,
+      totalNumber: '18',
       color: 'text-success',
       bgColor: 'bg-success-light',
     },
     {
       name: 'Total Follow Up',
+      totalNumber: '12',
       icon: PhoneCall,
       color: 'text-accent-secondary',
       bgColor: 'bg-accent-light',
@@ -25,6 +27,7 @@ const UserPortal = () => {
     {
       name: 'Total Skips',
       icon: Ban,
+      totalNumber: '7',
       color: 'text-danger',
       bgColor: 'bg-danger-light',
     },
@@ -53,7 +56,7 @@ const UserPortal = () => {
                   <value.icon size={20} />
                 </span>
 
-                <p className="text-center mt-2 text-sm font-semibold">{value.totalNumber}</p>
+                <p className="text-center mt-2 text-lg font-semibold">{value.totalNumber}</p>
                 <p className="text-center mt-2 text-gray-500 text-sm">{value.name}</p>
               </div>
             ))}
