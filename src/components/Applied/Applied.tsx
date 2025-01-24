@@ -63,9 +63,11 @@ const Applied = () => {
       <div className='flex flex-col justify-center w-full mt-10 bg-white border border-gray-300 rounded-xl px-5 py-7 sm:px-7 md:py-10'>
         <div className='flex flex-row justify-between'>
           <p className='font-semibold text-gray-900 text-lg md:text-xl'>Journeyman Plumber</p>
-          <div className='flex flex-row items-center justify-center  space-x-2 border rounded-md px-0 py-0 lg:px-3 lg:py-1.5 hover:bg-slate-100 cursor-pointer'>
+          <div className='flex flex-row items-center justify-center  space-x-2 border rounded-md px-0 py-0 lg:px-3 lg:py-1.5 hover:bg-slate-100 cursor-pointer'
+          onClick={() => handleAddNotes()}
+          >
             <FileText size={20} />
-            <button className='font text-xs w-full' onClick={() => handleAddNotes()}>Add Notes</button>
+            <button className='font text-xs w-full' >Add Notes</button>
           </div>
         </div>
 
