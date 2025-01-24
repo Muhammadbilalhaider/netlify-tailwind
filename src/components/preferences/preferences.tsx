@@ -17,50 +17,50 @@ const Preferences = () => {
         <hr className='border w-full '></hr>
 
         <div className='flex flex-col border mt-6 m-8 rounded-md p-4'>
-          <div className='flex space-x-1 items-center text-sky-700 flex-row'>
+          <div className='flex space-x-1 items-center text-[#247BAF] flex-row'>
             <Briefcase size={20} />
             <p className='font-semibold text-lg'>Job Title Preferences</p>
           </div>
           <div className='flex flex-col  space-y-2 mt-5'>
-            <input className='font-semibold  text-sm text-gray-800 p-1.5 rounded-lg border' placeholder='Desired Job Titles'/>
-            <input className='font-semibold text-sm text-gray-800 p-1.5 rounded-lg border' placeholder='e.g. Software Engineer, Frontend Developer'/>
-            <input className='font-semibold text-sm text-gray-800 p-1.5 rounded-lg border' placeholder='Separate multiple titles with commas'/>
+            <p className='font-medium  text-sm text-gray-700 rounded-lg'>Desired Job Titles</p>
+            <input className='text-sm text-gray-600 p-1.5 rounded-lg border' placeholder='e.g. Software Engineer, Frontend Developer'/>
+            <input className=' text-sm text-gray-600 p-1.5 rounded-lg border' placeholder='Separate multiple titles with commas'/>
             
           </div>
 
 
           <div className='flex flex-col space-y-2 mt-5'>
-            <p className='font-semibold text-sm text-gray-700'>Excluded Words from Titles</p>
-            <input className='font-semibold text-sm text-gray-800 p-1.5 rounded-lg border' placeholder='e.g. Lead, Technical, Intern'/>
-            <input className='font-semibold text-sm text-gray-800 p-1.5 rounded-lg border' placeholder='Jobs containing these words will be filtered out'/>
+          <p className='font-medium  text-sm text-gray-700 rounded-lg'>Excluded Words from Titles</p>
+            <input className='text-sm text-gray-800 p-1.5 rounded-lg border' placeholder='e.g. Lead, Technical, Intern'/>
+            <input className=' text-sm text-gray-800 p-1.5 rounded-lg border' placeholder='Jobs containing these words will be filtered out'/>
             </div>
 
         </div>
 
         <div className='flex flex-col border mt-4 m-8 rounded-md p-4'>
-          <div className='flex space-x-1 text-green-900 items-center flex-row'>
+          <div className='flex space-x-1 text-[#217346] items-center flex-row'>
             <Building2 size={20} />
             <p className='font-semibold text-lg'>Company Preferences</p>
           </div>
           <div className='flex flex-col  space-y-2 mt-5'>
-            <p className='font-semibold text-sm text-gray-800'>Excluded Companies</p>
-            <input className='font-semibold text-sm text-gray-800 p-1.5 rounded-lg border' placeholder='e.g. Company A, Company B'/>
+          <p className='font-medium  text-sm text-gray-700 rounded-lg'>Excluded Companies</p>
+            <input className='text-sm text-gray-800 p-1.5 rounded-lg border' placeholder='e.g. Company A, Company B'/>
        
-            <p className='text-sm text-gray-700'>Jobs from these companies will be filtered out</p>
+            <p className='text-sm text-gray-500'>Jobs from these companies will be filtered out</p>
           </div>
 
         </div>
 
 
         <div className='flex flex-col border mt-4 m-8 rounded-md p-4'>
-          <div className='flex space-x-1 text-yellow-600 items-center flex-row'>
+          <div className='flex space-x-1 text-[#FFE066] items-center flex-row'>
             <MapPin size={20} />
             <p className='font-semibold text-lg'>Location Preferences</p>
           </div>
           <div className='flex flex-col  space-y-2 mt-5'>
-            <p className='font-semibold text-sm text-gray-800'>Cities</p>
-            <input className='font-semibold text-sm text-gray-800 p-1.5 rounded-lg border' placeholder='e.g. New York, San Francisco'/>
-            <p className='text-sm text-gray-700'>Jobs from these companies will be filtered out</p>
+          <p className='font-medium  text-sm text-gray-700 rounded-lg'>Cities</p>
+            <input className='text-sm text-gray-800 p-1.5 rounded-lg border' placeholder='e.g. New York, San Francisco'/>
+            <p className='text-sm text-gray-500 border-gray-200'>Jobs from these companies will be filtered out</p>
           </div>
 
           <div className='flex flex-col w-full mt-5'>
@@ -110,13 +110,13 @@ const Preferences = () => {
         </div>
 
         <div className='flex flex-col border mt-6 m-8 rounded-md p-4'>
-          <div className='flex space-x-1 items-center text-emerald-600 flex-row'>
+          <div className='flex space-x-1 items-center text-[#217346] flex-row'>
             <Code size={20} />
             <p className='font-semibold text-lg'>Technology Preferences</p>
           </div>
           <div className='flex flex-col  space-y-2 mt-5'>
-            <p className='font-semibold text-sm text-gray-800'>Required Technologies</p>
-            <input className='font-semibold text-sm text-gray-800 p-1.5 rounded-lg border' placeholder='e.g. React, TypeScript'/>
+            <p className=' text-sm text-gray-800'>Required Technologies</p>
+            <input className='text-sm text-gray-800 p-1.5 rounded-lg border' placeholder='e.g. React, TypeScript'/>
           
             <p className='text-sm text-gray-700'>Only show jobs that include these technologies</p>
           </div>
@@ -124,7 +124,7 @@ const Preferences = () => {
 
           <div className='flex flex-col space-y-2 mt-5'>
             <p className='font-semibold text-sm text-gray-700'>Excluded Technologies</p>
-            <input className='font-semibold text-sm text-gray-800 p-1.5 rounded-lg border' placeholder='e.g. PHP, WordPress'/>
+            <input className=' text-sm text-gray-800 p-1.5 rounded-lg border' placeholder='e.g. PHP, WordPress'/>
             <p className='text-sm text-gray-700'>Filter out jobs with these technologies</p>
           </div>
 
@@ -132,7 +132,7 @@ const Preferences = () => {
 
 
         <div className='flex flex-col mt-6 m-4 rounded-md p-4'>
-          <button className='w-full p-2 rounded-md bg-sky-700 text-white'>Save Preferences</button>
+          <button className='w-full p-2 rounded-md bg-[#247BAF] text-white'>Save Preferences</button>
         </div>
 
       </div>
