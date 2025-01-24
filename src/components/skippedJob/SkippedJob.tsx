@@ -7,8 +7,8 @@ const SkippedJob = () => {
 
       {/* Header Section */}
       <div className="flex w-full flex-col space-y-2">
-        <p className="font-bold text-lg sm:text-xl lg:text-2xl">Skipped Jobs</p>
-        <p className="text-sm sm:text-base text-gray-600">
+        <p className="font-bold text-lg text-gray-900 sm:text-xl lg:text-2xl">Skipped Jobs</p>
+        <p className="text-sm sm:text-base text-gray-500">
           Review jobs you've skipped - you can always change your mind!
         </p>
       </div>
@@ -31,22 +31,23 @@ const SkippedJob = () => {
       <div className="flex flex-col bg-gray-50 rounded-lg shadow-md w-full">
         {/* Table Header */}
         <div className="hidden sm:flex flex-row justify-between px-4 md:text-sm sm:px-8 py-3 bg-gray-50 rounded-t-lg text-sm sm:text-base lg:text-lg font-medium text-gray-800">
-          <span>Job Title</span>
-          <span>Company</span>
-          <span>Skipped</span>
-          <span>Actions</span>
+          <span className='font-medium text-sm text-gray-600'>Job Title</span>
+          <span className='font-medium text-sm text-gray-600'>Company</span>
+          <span className='font-medium text-sm text-gray-600'>Skipped</span>
+          <span className='font-medium text-sm text-gray-600'>Actions</span>
         </div>
         <hr className="border-gray-300 opacity-40" />
 
         {/* Job Row */}
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center px-4  py-3 bg-white space-y-4 sm:space-y-0">
-          <div className="w-full sm:w-auto text-sm md:text-xs sm:text-base">
-            <p className="font-medium">Journeyman Plumber</p>
+          <div className="w-full sm:w-auto">
+            <p className="font-medium text-base text-gray-900">Journeyman Plumber</p>
+            <p className='text-gray-500 font-medium text-sm'>Bellingham, MA, US</p>
           </div>
-          <div className="w-full sm:w-auto text-sm md:text-xs">
+          <div className="w-full sm:w-auto text-gray-900 text-sm">
             <p>G&C Plumbing & Heating LLC</p>
           </div>
-          <div className="w-full sm:w-auto text-sm md:text-xs sm:text-base text-gray-500">
+          <div className="w-full sm:w-auto text-xs md:text-xs sm:text-base text-gray-500">
             <p>About 21 hours ago</p>
           </div>
           <div className="flex flex-row lg:gap-2 gap-1 w-full md:text-xs sm:w-auto justify-start sm:justify-center">

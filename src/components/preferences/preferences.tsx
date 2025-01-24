@@ -22,17 +22,18 @@ const Preferences = () => {
             <p className='font-semibold text-lg'>Job Title Preferences</p>
           </div>
           <div className='flex flex-col  space-y-2 mt-5'>
-            <p className='font-semibold text-sm text-gray-800'>Desired Job Titles</p>
-            <p className='text-sm text-gray-500'>e.g. Software Engineer, Frontend Developer</p>
-            <p className='text-sm text-gray-700'>Separate multiple titles with commas</p>
+            <input className='font-semibold  text-sm text-gray-800 p-1.5 rounded-lg border' placeholder='Desired Job Titles'/>
+            <input className='font-semibold text-sm text-gray-800 p-1.5 rounded-lg border' placeholder='e.g. Software Engineer, Frontend Developer'/>
+            <input className='font-semibold text-sm text-gray-800 p-1.5 rounded-lg border' placeholder='Separate multiple titles with commas'/>
+            
           </div>
 
 
           <div className='flex flex-col space-y-2 mt-5'>
             <p className='font-semibold text-sm text-gray-700'>Excluded Words from Titles</p>
-            <p className='text-sm text-gray-500'>e.g. Lead, Technical, Intern</p>
-            <p className='text-sm text-gray-700'>Jobs containing these words will be filtered out</p>
-          </div>
+            <input className='font-semibold text-sm text-gray-800 p-1.5 rounded-lg border' placeholder='e.g. Lead, Technical, Intern'/>
+            <input className='font-semibold text-sm text-gray-800 p-1.5 rounded-lg border' placeholder='Jobs containing these words will be filtered out'/>
+            </div>
 
         </div>
 
@@ -43,7 +44,8 @@ const Preferences = () => {
           </div>
           <div className='flex flex-col  space-y-2 mt-5'>
             <p className='font-semibold text-sm text-gray-800'>Excluded Companies</p>
-            <p className='text-sm text-gray-500'>e.g. Company A, Company B</p>
+            <input className='font-semibold text-sm text-gray-800 p-1.5 rounded-lg border' placeholder='e.g. Company A, Company B'/>
+       
             <p className='text-sm text-gray-700'>Jobs from these companies will be filtered out</p>
           </div>
 
@@ -57,7 +59,7 @@ const Preferences = () => {
           </div>
           <div className='flex flex-col  space-y-2 mt-5'>
             <p className='font-semibold text-sm text-gray-800'>Cities</p>
-            <p className='text-sm text-gray-500'>e.g. New York, San Francisco</p>
+            <input className='font-semibold text-sm text-gray-800 p-1.5 rounded-lg border' placeholder='e.g. New York, San Francisco'/>
             <p className='text-sm text-gray-700'>Jobs from these companies will be filtered out</p>
           </div>
 
@@ -114,15 +116,15 @@ const Preferences = () => {
           </div>
           <div className='flex flex-col  space-y-2 mt-5'>
             <p className='font-semibold text-sm text-gray-800'>Required Technologies</p>
-            <p className='text-sm text-gray-500'>e.g. React, TypeScript
-            </p>
+            <input className='font-semibold text-sm text-gray-800 p-1.5 rounded-lg border' placeholder='e.g. React, TypeScript'/>
+          
             <p className='text-sm text-gray-700'>Only show jobs that include these technologies</p>
           </div>
 
 
           <div className='flex flex-col space-y-2 mt-5'>
             <p className='font-semibold text-sm text-gray-700'>Excluded Technologies</p>
-            <p className='text-sm text-gray-500'>e.g. PHP, WordPress</p>
+            <input className='font-semibold text-sm text-gray-800 p-1.5 rounded-lg border' placeholder='e.g. PHP, WordPress'/>
             <p className='text-sm text-gray-700'>Filter out jobs with these technologies</p>
           </div>
 
