@@ -15,7 +15,7 @@ const SkippedJob = () => {
 
       {/* Search Bar */}
       <div className="flex flex-col sm:flex-row justify-center items-center gap-4 w-full">
-        <div className="w-full sm:w-64 md:w-full flex items-center bg-white pl-3 rounded-xl shadow-sm">
+        <div className="w-full sm:w-64 md:w-full flex items-center bg-white pl-3 rounded-xl ">
           <span className="text-slate-400">
             <Search size={20} />
           </span>
@@ -39,7 +39,7 @@ const SkippedJob = () => {
         <hr className="border-gray-300 opacity-40" />
 
         {/* Job Row */}
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center px-4  py-3 bg-white space-y-4 sm:space-y-0">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center px-4 rounded-md py-3 bg-white space-y-4 sm:space-y-0">
           <div className="w-full sm:w-auto">
             <p className="font-medium text-base text-gray-900">Journeyman Plumber</p>
             <p className='text-gray-500 font-medium text-sm'>Bellingham, MA, US</p>

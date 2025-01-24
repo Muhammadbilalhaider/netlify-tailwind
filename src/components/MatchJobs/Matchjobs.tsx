@@ -41,7 +41,7 @@ const Matchjobs = () => {
         <div className="flex p-3 flex-col w-full bg-white border border-gray-300 rounded-xl space-y-3">
           <span className='flex flex-row items-center space-x-6'>
           <p className="font-semibold text-gray-900 text-lg sm:text-lg">Journeyman Plumber</p>
-          <span className='bg-success/5 p-1'><p className='text-xs text-success'>New Match</p></span>
+          <span className='bg-success/5 p-1.5 rounded-full '><p className='text-xs px-1 font-medium text-success'>New Match</p></span>
           </span>
           <div className="flex flex-row items-center space-x-2 text-sm">
             <Building2 size={18} />

@@ -191,6 +191,10 @@ const JobFeed = () => {
           </div>
          
         </div>
+         {/* Separator */}
+         <div className="w-full py-3 mt-6">
+          <hr className="border border-gray-400 opacity-40" />
+        </div>
       </div>
 
       {/* Footer Action Buttons */}

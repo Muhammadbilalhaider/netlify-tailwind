@@ -37,13 +37,13 @@ const UserPortal = () => {
     <div className="w-full flex flex-col justify-center items-start pb-24 py-10 px-5 sm:px-10 lg:px-48">
       <div className="flex flex-col py-4 w-full rounded-md shadow-md bg-white">
         <div className="flex flex-col mx-8">
-          <p className="font-semibold text-2xl text-neutral-dark">Account Settings</p>
+          <p className="font-bold  text-3xl text-neutral-dark">Account Settings</p>
           <p className="text-gray-500">Manage your profile and account settings</p>
         </div>
 
         <hr className="border w-full mt-6" />
         <div className="flex flex-col mx-8 mt-6">
-          <p className="text-neutral-dark font-semibold text-2xl">Application Statistics</p>
+          <p className="text-neutral-dark font-semibold text-xl">Application Statistics</p>
           <div className="grid lg:grid-cols-4 grid-cols-1 w-full mt-4 flex-row justify-between gap-4">
             {stats.map((value, index) => (
               <div
@@ -65,7 +65,7 @@ const UserPortal = () => {
         <div className="flex flex-col mx-8">
           <div className='flex flex-row justify-between mt-8 w-full'>
 
-            <p className='text-2xl text-neutral-dark font-bold'>Profile Information</p>
+            <p className='text-xl text-neutral-dark font-semibold'>Profile Information</p>
             <p className='text-primary'> Edit Profile</p>
           </div>
           <div className='grid lg:grid-cols-2 sm:grid-cols-1 w-full gap-x-3'>
@@ -94,7 +94,7 @@ const UserPortal = () => {
         </div>
         <hr className='flex w-full border mt-4'></hr>
         <div className='flex flex-col px-8 mt-4'>
-        <p className='text-2xl text-neutral-dark font-bold'>Change Password</p>
+        <p className='text-xl text-neutral-dark font-semibold'>Change Password</p>
           <span className='flex flex-col w-full space-y-2 mt-2'>
             <label className='text-gray-600'>Current Password</label>
             <input type='password' className='w-full border p-2 rounded-md' placeholder='Current Password'/>
