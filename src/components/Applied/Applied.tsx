@@ -7,31 +7,36 @@ const Applied = () => {
   const [tracker, setTracker] = useState(null)
   const [hoveredStage, setHoveredStage] = useState(null);
   const [openNotes, setOPenNotes] = useState(false);
+  const [description, setDescription] = useState('')
 
   const stages = [
-    { name: "Applied", icon: Rocket },
-    { name: "Rejected", icon: Skull },
-    { name: "Ghosted", icon: Ghost },
-    { name: "Phone Screen", icon: Phone },
-    { name: "Interview", icon: Users },
-    { name: "Offer", icon: PartyPopper },
+    { name: "Applied", description: 'Application submitted! 🚀', icon: Rocket },
+    { name: "Rejected", description: 'Better luck next time 💪', icon: Skull },
+    { name: "Ghosted", description: 'No response... 👻', icon: Ghost },
+    { name: "Phone Screen", description: 'Time to chat! 📞', icon: Phone },
+    { name: "Interview", description: 'Show your skills! 💫', icon: Users },
+    { name: "Offer", description: 'Congratulations! 🎉', icon: PartyPopper },
   ];
 
-  const stageDescriptions = {
+  const stageDescriptions = [{
     'Applied': 'Application submitted! 🚀',
     'Rejected': 'Better luck next time 💪',
     'Ghosted': 'No response... 👻',
     'Phone Screen': 'Time to chat! 📞',
     'Interview': 'Show your skills! 💫',
     'Offer': 'Congratulations! 🎉'
-  };
+  }];
+
+
 
 
   const handleChangeTracker = (index: number) => {
     setTracker(index)
+    setDescription(index)
   }
 
-  const handleMouseEnter = (index) => {
+  const handleMouseEnter = (index: number) => {
+    setDescription(index);
     setHoveredStage(index);
   };
 
@@ -53,7 +58,7 @@ const Applied = () => {
     <div className='w-full flex flex-col justify-center items-start py-10 px-4 sm:px-10 lg:px-32'>
 
       <div className='px-3 flex w-full flex-col'>
-      <p className="font-bold text-base lg:text-lg">Application Tracker</p>
+        <p className='lg:text-2xl font-bold text-lg'>Application Tracker</p>
         <p className='text-gray-500 mt-1 text-xs lg:text-base'>
           Review and apply to jobs you've matched with
         </p>
@@ -63,7 +68,7 @@ const Applied = () => {
         <div className='flex flex-row justify-between'>
           <p className='font-semibold text-gray-900 lg:text-lg text-sm md:text-xl'>Journeyman Plumber</p>
           <div className='flex flex-row items-center justify-center  space-x-2 border rounded-md px-0 py-0 lg:px-3 lg:py-1.5 hover:bg-slate-100 cursor-pointer'
-          onClick={() => handleAddNotes()}
+            onClick={() => handleAddNotes()}
           >
             <FileText size={20} />
             <button className='font text-xs w-full' >Add Notes</button>
@@ -101,8 +106,15 @@ const Applied = () => {
                 onMouseEnter={() => handleMouseEnter(index)}
                 onMouseLeave={handleMouseLeave}
               >
+                {hoveredStage === index && (
+                  <span className={`absolute text-nowrap text-xs p-1 rounded-lg mb-2  text-center text-white bg-slate-800 bottom-20 hover:scale-110`}
+                  >
+                    {stage.description}
+                  </span>
+                )}
+
                 <span
-                  className={`flex flex-col lg:w-14 md:w-12 md:h-12 lg:h-14 w-6 h-6 rounded-full items-center justify-center 
+                  className={`flex flex-col lg:w-14 md:w-12 md:h-12 lg:h-14 w-6 h-6 rounded-full items-center justify-center transition-transform duration-300 hover:scale-110
                     ${tracker === index
                       ? (index === 0
                         ? 'lg:border-8 md:border-4 border-4 border-sky-800 bg-white text-[#247BAF]'
@@ -120,6 +132,7 @@ const Applied = () => {
                       )
                       : 'lg:border-2 md:border-4 border-4 border-gray-400 bg-white text-sky-700'
                     }`}>
+
                   {<stage.icon size={"50%"} />}
                 </span>
                 <span
@@ -143,13 +156,7 @@ const Applied = () => {
                 >
                   {stage.name}
                 </span>
-
-
               </div>
-
-
-
-
             ))}
           </div>
 

@@ -123,7 +123,7 @@ const JobFeed = () => {
             </span>
 
 
-            <p className="lg:text-base md:text-sm text-xs ml-7">NaN</p>
+            <p className="lg:text-base md:text-sm text-gray-600 text-xs ml-7">NaN</p>
 
           </div>
 
@@ -134,7 +134,7 @@ const JobFeed = () => {
             </span>
 
 
-            <p className="lg:text-base md:text-sm text-xs ml-7">Flexible 8-hour shifts, day shift, rotating weekends, year-round work</p>
+            <p className="lg:text-base md:text-sm text-xs text-gray-600 ml-7">Flexible 8-hour shifts, day shift, rotating weekends, year-round work</p>
 
           </div>
         </div>

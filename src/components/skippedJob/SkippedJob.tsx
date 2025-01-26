@@ -7,8 +7,8 @@ const SkippedJob = () => {
 
       {/* Header Section */}
       <div className="flex w-full flex-col space-y-2">
-      <p className="font-bold text-base lg:text-lg text-gray-900">Skipped Jobs</p>
-        <p className="text-xs lg:text-sm md:text-sm text-gray-500">
+      <p className='lg:text-2xl font-bold text-lg text-gray-900'>Skipped Jobs</p>
+      <p className='text-gray-500 mt-1 text-xs lg:text-base'>
           Review jobs you've skipped - you can always change your mind!
         </p>
       </div>

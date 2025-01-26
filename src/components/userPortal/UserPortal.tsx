@@ -44,7 +44,7 @@ const UserPortal = () => {
         <hr className="border w-full mt-6" />
         <div className="flex flex-col mx-8 mt-6">
           <p className="text-neutral-dark font-semibold lg:text-lg text-base md:text-xl lg:text-start text-center">Application Statistics</p>
-          <div className="grid lg:grid-cols-4 grid-cols-1 w-full mt-4 flex-row justify-between gap-4">
+          <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 w-full mt-4 flex-row justify-between gap-4">
             {stats.map((value, index) => (
               <div
                 key={index}
@@ -108,7 +108,7 @@ const UserPortal = () => {
           <p className='text-gray-600 md:text-base lg:text-base text-sm'>Current Password</p>
             <input type='password' className='w-full border p-2 md:text-base text-sm rounded-md' placeholder='Confirm Password'/>
           </span>
-          <button className='w-full bg-primary text-white p-1.5 rounded-md mt-5'>Update Password</button>
+          <button className='w-full bg-primary lg:text-base text-sm text-white p-1.5 rounded-md mt-5'>Update Password</button>
         </div>
       </div>
     </div>
