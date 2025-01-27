@@ -16,7 +16,7 @@ function App() {
         <Navigation />
 
         <Routes>
-          <Route path='feed' element={<JobFeed />} />
+          <Route path='' element={<JobFeed />} />
           <Route path='matches' element={< Matchjobs />} />
           <Route path='applied' element={< Applied/>} />
           <Route path='skipped' element ={<Skipped/>} />

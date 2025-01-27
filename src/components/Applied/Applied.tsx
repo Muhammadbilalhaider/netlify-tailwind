@@ -107,7 +107,7 @@ const Applied = () => {
                 onMouseLeave={handleMouseLeave}
               >
                 {hoveredStage === index && (
-                  <span className={`absolute text-nowrap text-xs p-1 rounded-lg mb-2  text-center text-white bg-slate-800 bottom-20 hover:scale-110`}
+                  <span className={`absolute text-nowrap text-xs p-1 px-2 rounded-lg mb-2  text-center text-white bg-slate-800 bottom-20 hover:scale-110`}
                   >
                     {stage.description}
                   </span>

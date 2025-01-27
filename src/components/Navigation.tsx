@@ -9,7 +9,7 @@ const Navigation = () => {
      
         <li className="flex flex-col items-center justify-center cursor-pointer group">
           <Link
-            to="/feed"
+            to="/"
             className="flex flex-col items-center justify-center text-xs text-gray-800 hover:text-blue-500"
           >
             <Briefcase size={20} />
